@@ -101,12 +101,13 @@ class Principal extends Controller
                  $data['precio'] = $result['precio'];
                  $data['cantidad'] = $producto['cantidad'];
                  $data['imagen'] = $result['imagen'];
-                 $subtotal = $result['precio'] * $result['cantidad'];
+                 $subtotal = $result['precio'] * $data['cantidad'];
                  $data['subTotal'] = number_format($subtotal,2);
                  array_push($array['productos'], $data);
                  $total += $subtotal;
              }
              $array['total'] = number_format($total,2);
+             $array['totalPaypal'] = number_format($total, 2, '.', '');
              $array['moneda'] = MONEDA;
              echo json_encode($array, JSON_UNESCAPED_UNICODE);
              die();

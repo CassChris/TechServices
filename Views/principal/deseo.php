@@ -14,7 +14,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-body shadow-lg">
+                <div class="card-body shadow-lg" id="areaImprimir">
                     <div class="table-responsive">
                         <table class="table table-borderer table-striped table-hover" id="tableListaDeseo">
                             <thead>
@@ -30,18 +30,26 @@
                             </tbody>
                         </table>
                     </div>
+                    <div class="text-end">
+                        
+                        <button class="btn btn-warning" type="button" onclick="printDiv('areaImprimir')" value="" >
+                        <i class="fas fa-solid fa-print"></i>
+                    </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
 </div>
 <div div="row">
 
 </div>
-
+<!-- //!! SI EL RECORRIDO DE LA TABLA ES POR MEDIO DE JS, DATATABLES FALLA -->
+<script src="<?php echo BASE_URL . 'assets/js/datatables.js'; ?>"></script>
+<script src="<?php echo BASE_URL . 'assets/js/imprimir.js'; ?>"></script>
 <?php include_once 'Views/templates/footer.php'; ?>
 <script src="<?php echo BASE_URL . 'assets/js/modulos/listaDeseo.js'; ?>"></script>
+
 </body>
 
 </html>

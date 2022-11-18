@@ -6,10 +6,10 @@ const PASS = "";
 const DB = "tienda_tech_services";
 const CHARSET = "charset=utf8";
 const TITLE = "Tech Services";
-const MONEDA = "PEN";
-const CLIENT_ID = "";
-const USER_SMTP = "christiantrabajo41@gmail.com";
-const PASS_SMTP = "ufqedrpadrjiyczf";
+const MONEDA = "USD";
+const CLIENT_ID = "AdZ-YiZtTjPObjdorBfKoyhzUwFEiq6T3MsNuRaoMnjsz7o0LzW-_rFMXmPAOThvhejQggs-eFewTZlT";
+const USER_SMTP = "casafrancarochachristianjhoan@gmail.com";
+const PASS_SMTP = "xcwxcmmzjxpeqslt";
 const PORT_SMTP = 465;
 const HOST_SMTP = "smtp.gmail.com";
 ?>

@@ -196,11 +196,9 @@
 </footer>
 <!-- Fin Footer -->
 
-<!-- Start Script -->
-<script src="<?php echo BASE_URL; ?>assets/js/jquery-3.6.0.min.js"></script>
-<script src="<?php echo BASE_URL; ?>assets/js/jquery-migrate-1.2.1.min.js"></script>
-<script src="<?php echo BASE_URL; ?>assets/js/bootstrap.bundle.min.js"></script>
-<script src="<?php echo BASE_URL; ?>assets/js/templatemo.js"></script>
+<!-- Scripts -->
+
+<script src="<?php echo BASE_URL; ?>assets/js/main.js"></script>
 <script src="<?php echo BASE_URL; ?>assets/js/all.min.js"></script>
 <script src="<?php echo BASE_URL; ?>assets/js/sweetalert2.all.min.js"></script>
 <script>
@@ -208,4 +206,4 @@
 </script>
 <script src="<?php echo BASE_URL; ?>assets/js/carrito.js"></script>
 <script src="<?php echo BASE_URL; ?>assets/js/login.js"></script>
-<!-- End Script -->
+<script src="<?php echo BASE_URL; ?>assets/js/submit-form.js"></script>

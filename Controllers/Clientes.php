@@ -58,7 +58,6 @@ class Clientes extends Controller
     }
 
     public function enviarCorreo()
-    //TODO CORREGIR ERROR DE MOSTRAR MODAL SECUNDARIO SI ES UN CORREO YA UTILIZADO
         {
         if (isset($_POST['correo']) && isset($_POST['token'])) {
             $mail = new PHPMailer(true);
@@ -75,7 +74,7 @@ class Clientes extends Controller
                 $mail->Port       = PORT_SMTP;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
                 //Recipients
-                $mail->setFrom('christiantrabajo41@gmail.com', TITLE);
+                $mail->setFrom('casafrancarochachristianjhoan@gmail.com', TITLE);
                 $mail->addAddress($_POST['correo']);
 
                 //Content
@@ -132,6 +131,27 @@ class Clientes extends Controller
             }
             echo json_encode($mensaje, JSON_UNESCAPED_UNICODE);
             die();
+        }
+    }
+
+    //registrar pedidos
+    public function registrarPedido()
+    {
+        $datos = file_get_contents('php://input');
+        $json = json_decode($datos,true);
+        if (is_array($json)) {
+            $id_transaccion = $json['id'];
+            $monto = $json['purchase_units'][0]['amount']['value'];
+            $estado = $json['status'];
+            $fecha = date('Y-m-d H:i:s');
+            $email = $json['payer']['email_address'];
+            $nombre = $json['payer']['name']['given_name'];
+            $apellido = $json['payer']['name']['surname'];
+            $direccion = $json['purchase_units'][0]['shipping']['address']['address_line_1'];
+            $ciudad = $json['purchase_units'][0]['shipping']['address']['admin_area_2'];
+            $email_user = $_SESSION['correoCliente'];
+            $data = $this->model->registrarPedido($id_transaccion,$monto,$estado,$fecha,$email,$nombre,$apellido,$direccion,$ciudad,$email_user);
+            print_r($data);
         }
     }
 }

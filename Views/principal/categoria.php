@@ -28,8 +28,8 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="card-body">
-                                <a href="<?php echo BASE_URL . 'principal/detail/' . $producto['idproducto'] ?>" class="h3 text-decoration-none"><?php echo $producto['nombre'] ?>Oupidatat non</a>
+                            <div class="card-body text-center">
+                                <a href="<?php echo BASE_URL . 'principal/detail/' . $producto['idproducto'] ?>" class="h3 logo text-decoration-none"><?php echo $producto['nombre'] ?></a>
                                 <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
 
                                     <li class="pt-2">

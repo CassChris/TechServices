@@ -26,17 +26,17 @@
                                 <div class="row">
                                     <div class="col-4">
                                         <a href="#">
-                                            <img class="card-img img-fluid" src="<?php echo BASE_URL; ?>assets/img/detail/detail1.jpg" alt="Product Image 1">
+                                            <img class="card-img img-fluid" src="https://definicion.de/wp-content/uploads/2013/07/productos-tecnologicos.jpg" alt="Product Image 1">
                                         </a>
                                     </div>
                                     <div class="col-4">
                                         <a href="#">
-                                            <img class="card-img img-fluid" src="<?php echo BASE_URL; ?>assets/img/detail/detail2.jpg" alt="Product Image 2">
+                                            <img class="card-img img-fluid" src="https://definicion.de/wp-content/uploads/2013/07/productos-tecnologicos.jpg" alt="Product Image 2">
                                         </a>
                                     </div>
                                     <div class="col-4">
                                         <a href="#">
-                                            <img class="card-img img-fluid" src="<?php echo BASE_URL; ?>assets/img/detail/detail3.jpg" alt="Product Image 3">
+                                            <img class="card-img img-fluid" src="https://definicion.de/wp-content/uploads/2013/07/productos-tecnologicos.jpg" alt="Product Image 3">
                                         </a>
                                     </div>
                                 </div>
@@ -48,17 +48,17 @@
                                 <div class="row">
                                     <div class="col-4">
                                         <a href="#">
-                                            <img class="card-img img-fluid" src="<?php echo BASE_URL; ?>assets/img/detail/detail4.jpg" alt="Product Image 4">
+                                            <img class="card-img img-fluid" src="https://definicion.de/wp-content/uploads/2013/07/productos-tecnologicos.jpg" alt="Product Image 4">
                                         </a>
                                     </div>
                                     <div class="col-4">
                                         <a href="#">
-                                            <img class="card-img img-fluid" src="<?php echo BASE_URL; ?>assets/img/detail/detail5.jpg" alt="Product Image 5">
+                                            <img class="card-img img-fluid" src="https://definicion.de/wp-content/uploads/2013/07/productos-tecnologicos.jpg" alt="Product Image 5">
                                         </a>
                                     </div>
                                     <div class="col-4">
                                         <a href="#">
-                                            <img class="card-img img-fluid" src="<?php echo BASE_URL; ?>assets/img/detail/detail6.jpg" alt="Product Image 6">
+                                            <img class="card-img img-fluid" src="https://definicion.de/wp-content/uploads/2013/07/productos-tecnologicos.jpg" alt="Product Image 6">
                                         </a>
                                     </div>
                                 </div>
@@ -153,8 +153,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="card-body">
-                            <a href="<?php echo BASE_URL . 'principal/detail/' . $producto['idproducto'] ?>" class="h3 text-decoration-none"><?php echo $producto['nombre'] ?></a>
+                        <div class="card-body text-center">
+                            <a href="<?php echo BASE_URL . 'principal/detail/' . $producto['idproducto'] ?>" class="h3 logo text-decoration-none"><?php echo $producto['nombre'] ?></a>
                             <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
 
                                 <li class="pt-2">

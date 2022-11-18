@@ -33,7 +33,7 @@
             </div>
             <div class="col-lg-6 mb-0 d-flex align-items-center">
               <div class="text-align-left">
-                <h1 class="h1">Camara de Seguridad</h1>
+                <h1 class="h1 logo">Camara de Seguridad</h1>
                 <h3 class="h2">Lo mejor para la seguridad de tu hogar</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto iure deserunt a esse ad odit numquam sunt laborum eius recusandae tempore modi iste laboriosam ipsa quos, minus nostrum similique obcaecati!
@@ -51,7 +51,7 @@
             </div>
             <div class="col-lg-6 mb-0 d-flex align-items-center">
               <div class="text-align-left">
-                <h1 class="h1">Impresora</h1>
+                <h1 class="h1 logo">Impresora</h1>
                 <h3 class="h2">Las mejores impresoras del mercado</h3>
                 <p>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa maxime recusandae voluptatum minus aliquam illum, eum aut. Praesentium porro adipisci sequi ut optio veniam, delectus, fugit maiores quidem eaque dolorem.
